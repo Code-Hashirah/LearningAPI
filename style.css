@@ -13,18 +13,18 @@ body{
 
 .one{
    color: green;
-  
    padding: 10px;
 }
 #nav{
     width: 100%;
-    overflow: auto;
 }
 
 .id{
     color: black;
-    justify-self: flex-start;
-   
+    justify-self: flex-start;  
+}
+.iphone-images{
+    border-radius: 90px;
 }
 .title{
     width: 20%;

@@ -22,11 +22,11 @@ let theProducts=res.products;
 //  let div2=document.getElementById('two');
 //  let div3=document.getElementById('three')
 img.setAttribute('class', 'iphone-images w-75 h-50')
-div1.setAttribute('class','one col-5')
+div1.setAttribute('class','one col-6 col-md-6 col-sm-12')
  pTag.setAttribute('class','id')
  pTag1.setAttribute('class','title')
  pTag2.setAttribute('class','price')
- mainDiv.setAttribute('class','row text-bg-light mx-5')
+ mainDiv.setAttribute('class','row text-bg-light mx-3')
  div1.appendChild(pTag)
 img.src="https://cdn.pixabay.com/photo/2016/05/27/08/51/mobile-phone-1419275__340.jpg"
  div1.append(pTag1)
