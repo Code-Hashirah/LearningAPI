@@ -23,10 +23,14 @@ body{
 }
 
 .one{
-   color: rgb(4, 48, 65);
    font-weight: 600;
    justify-content: center;
-   margin-bottom: 100px;
+   margin-top: 10px;
+    margin-bottom: 60px;
+    border: 1px groove rgb(228, 221, 236);
+    padding-left: 10px;
+    background-color: black;
+    color: rgb(219, 224, 228);
 }
 .h2{
     text-align: center;
@@ -38,15 +42,13 @@ body{
 }
 
 .id{
-    color: black;
-    justify-self: flex-start;  
+    justify-self:center;  
 }
 .iphone-images{
-    border-radius: 90px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
 }
-.title{
-    width: 10%;
-    color: black;
-}
+
 
 

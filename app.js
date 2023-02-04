@@ -1,4 +1,4 @@
-fetch('https://dummyjson.com/products?limit=10')
+fetch('https://dummyjson.com/products?limit=12')
 .then(res => res.json())
 .then(res =>{
     console.log(res.products);
@@ -15,13 +15,13 @@ let theProducts=res.products;
  let pTag1= document.createElement('p');
  let pTag2= document.createElement('p');
  pTag.innerHTML=prodId;
- pTag1.innerHTML=prodTitle;
- pTag2.innerHTML="$"+prodPrice;
+ pTag1.innerHTML="Name: "+prodTitle;
+ pTag2.innerHTML="Price: $"+prodPrice;
  let div1=document.createElement('div');
  let img=document.createElement('img')
 //  let div2=document.getElementById('two');
 //  let div3=document.getElementById('three')
-img.setAttribute('class', 'iphone-images w-50 h-50')
+img.setAttribute('class', 'iphone-images')
 div1.setAttribute('class','one col-12 col-md-4 col-sm-12')
  pTag.setAttribute('class','id')
  pTag1.setAttribute('class','title')

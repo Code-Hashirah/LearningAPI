@@ -7,6 +7,7 @@
 body{
 
    overflow: auto;
+   background-color: black;
 }
 #brand-img{
     height: 180px;
@@ -14,4 +15,28 @@ body{
 #main-p{
     overflow: hidden;
     width: auto;
+    border: 2px solid black;
+    background-color: black;
+}
+.one{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 1px groove rgb(39, 32, 48);
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+   
+}
+.h2{
+    text-align: center;
+}
+.images{
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-bottom: 5px;
+   
+}
+#items{
+    background-color: black;
 }
