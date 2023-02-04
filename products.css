@@ -1,0 +1,17 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+   overflow: auto;
+}
+#brand-img{
+    height: 180px;
+}
+#main-p{
+    overflow: hidden;
+    width: auto;
+}

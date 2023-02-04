@@ -4,19 +4,37 @@
     box-sizing: border-box;
 }
 body{
-   overflow-wrap: normal;
+
+   overflow: auto;
+}
+#brand-img{
+    height: 180px;
 }
 #main-p{
     overflow: hidden;
     width: auto;
 }
+#items{
+    padding-bottom: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .one{
-   color: green;
-   padding: 10px;
+   color: rgb(4, 48, 65);
+   font-weight: 600;
+   justify-content: center;
+   margin-bottom: 100px;
+}
+.h2{
+    text-align: center;
 }
 #nav{
-    width: 100%;
+    /* z-index: 1; */
+    background-color: black;
+    /* position: sticky; */
 }
 
 .id{
@@ -27,7 +45,7 @@ body{
     border-radius: 90px;
 }
 .title{
-    width: 20%;
+    width: 10%;
     color: black;
 }
 
