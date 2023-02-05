@@ -4,22 +4,17 @@
     box-sizing: border-box;
 }
 body{
-
-   overflow: auto;
+    width: auto;
+   overflow-x: hidden;
+   background-color: black;
 }
 #brand-img{
     height: 180px;
 }
 #main-p{
-    overflow: hidden;
     width: auto;
-}
-#items{
-    padding-bottom: 50px;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    border: 2px solid rgb(236, 226, 226);
+    background-color: black;
 }
 
 .one{
@@ -48,6 +43,9 @@ body{
     border-radius: 100px;
     width: 100px;
     height: 100px;
+}
+.id, .title ,.price{
+    font-style: oblique;
 }
 
 
