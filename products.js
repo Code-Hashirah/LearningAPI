@@ -75,6 +75,19 @@ img.src=thumbnail;
    //  console.log(prodPrice);
  }
 })
+function showAndHide(){
+   let mainDiv=document.getElementById('items');
+   mainDiv.style.display="none";
+   let searchDiv=document.getElementById('searchItems');
+   searchDiv.style.display="flex";
+  
+}
+function restoreIt(){
+   let searchDiv=document.getElementById('searchItems');
+      searchDiv.style.display="none";
+      let mainDiv=document.getElementById('items');
+      mainDiv.style.display="flex";
+}
 
 // }
 // else{}
@@ -84,11 +97,12 @@ img.src=thumbnail;
        .then(res => res.json())
          //  .then(console.log);
       .then(res=>{
+         showAndHide();
          // let theProducts=[]
         let   theProducts=res.products;
             // console.log(res.products.title)
-            let mainDiv=document.getElementById('items')
-            console.log(mainDiv.childElementCount)
+            let searchDiv=document.getElementById('searchItems')
+            // console.log(searchDiv.childElementCount)
          for(let i=0;i<theProducts.length; i++){
             let prodId=res.products[i].id;
             let prodTitle=res.products[i].title;
@@ -119,10 +133,10 @@ img.src=thumbnail;
          pTag5.innerHTML="Rating: "+rating;
          pTag6.innerHTML=brand;
          pTag7.innerHTML="Brand: "+cartegory;
-         let div1=document.createElement('div');
+         let div0=document.createElement('div');
          let img=document.createElement('img')
         img.setAttribute('class', 'images')
-        div1.setAttribute('class','one col-12 col-md-4 col-sm-12')
+        div0.setAttribute('class','ones col-12 col-md-4 col-sm-12')
          pTag.setAttribute('class','id')
          pTag1.setAttribute('class','title')
          pTag2.setAttribute('class','price')
@@ -132,19 +146,19 @@ img.src=thumbnail;
          pTag6.setAttribute('class','brand')
          pTag7.setAttribute('class','cartegory')
          testP.setAttribute('class','id')
-         mainDiv.setAttribute('class','row text-bg-light mx-3 container-fluid')
-         div1.appendChild(pTag)
+         searchDiv.setAttribute('class','row text-bg-light mx-3 container-fluid')
+         div0.appendChild(pTag)
         img.src=thumbnail;
       //   console.log(prodTitle)
-         div1.append(pTag1)
-         div1.append(pTag2)
-         div1.append(pTag3)
-         div1.append(pTag4)
-         div1.append(pTag5)
-         div1.append(pTag6)
-         div1.append(pTag7)
-         div1.append(img)
-         mainDiv.appendChild(div1)
+         div0.append(pTag1)
+         div0.append(pTag2)
+         div0.append(pTag3)
+         div0.append(pTag4)
+         div0.append(pTag5)
+         div0.append(pTag6)
+         div0.append(pTag7)
+         div0.append(img)
+         searchDiv.appendChild(div0)
          img.setAttribute('alt','Phones')
          // console.log(prodId);
          console.log(prodTitle);

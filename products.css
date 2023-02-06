@@ -28,6 +28,15 @@ body{
     color: white;
    
 }
+.ones{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border: 1px groove rgb(39, 32, 48);
+    padding-left: 0;
+    background-color: black;
+    color: white;
+   
+}
 .h2{
     text-align: center;
 }
@@ -39,6 +48,9 @@ body{
    
 }
 #items{
+    background-color: black;
+}
+#searchItems{
     background-color: black;
 }
 /* .id, .title ,.price ,.description ,.brand ,.rating ,.discount ,.cartegory::first-line{
