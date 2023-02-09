@@ -95,6 +95,7 @@ function restoreIt(){
    let Title
 
    Title=document.getElementById('find').value;    
+   if(Title.length!=0){
    fetch(`https://dummyjson.com/products/search?q=${Title}`)
        .then(res => res.json())
          //  .then(console.log);
@@ -102,7 +103,6 @@ function restoreIt(){
          showAndHide();
          // let theProducts=[]
         let   theProducts=res.products;
-            // console.log(res.products.title)
             let searchDiv=document.getElementById('searchItems')
             
          for(let i=0;i<theProducts.length; i++){
@@ -138,7 +138,7 @@ function restoreIt(){
          let div0=document.createElement('div');
          let img=document.createElement('img')
         img.setAttribute('class', 'images')
-        div0.setAttribute('class','ones col-12 col-md-4 col-sm-12')
+        div0.setAttribute('class','ones col-12 col-md-5 mx-2 col-sm-12')
          pTag.setAttribute('class','id')
          pTag1.setAttribute('class','title')
          pTag2.setAttribute('class','price')
@@ -167,7 +167,12 @@ function restoreIt(){
          // console.log(prodPrice);
          // theProducts.length=0;      
          }
-                       
+         document.getElementById('find').value="";  
+            document.getElementById('find').length=0;     
             })
-         
+            
+         }
+         // else{
+         //    break;
+         // }
              }
