@@ -92,8 +92,10 @@ function restoreIt(){
 // }
 // else{}
  function search(){
-   let Title=document.getElementById('find').value;
-       fetch(`https://dummyjson.com/products/search?q=${Title}`)
+   let Title
+
+   Title=document.getElementById('find').value;    
+   fetch(`https://dummyjson.com/products/search?q=${Title}`)
        .then(res => res.json())
          //  .then(console.log);
       .then(res=>{
@@ -102,7 +104,7 @@ function restoreIt(){
         let   theProducts=res.products;
             // console.log(res.products.title)
             let searchDiv=document.getElementById('searchItems')
-            // console.log(searchDiv.childElementCount)
+            
          for(let i=0;i<theProducts.length; i++){
             let prodId=res.products[i].id;
             let prodTitle=res.products[i].title;
@@ -163,11 +165,8 @@ function restoreIt(){
          // console.log(prodId);
          console.log(prodTitle);
          // console.log(prodPrice);
-        
-        
+         // theProducts.length=0;      
          }
-       
-        
                        
             })
          

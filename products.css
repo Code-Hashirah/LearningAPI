@@ -7,25 +7,32 @@
 body{
     width: auto;
    overflow-x:hidden;
-   background-color: black;
+   background-image: url('bg-home.jpg');
+   background-blend-mode: darken;
+   /* background-repeat: no-repeat; */
+   /* background-position: center; */
+   /* background-size: cover; */
 }
 #brand-img{
     height: 180px;
 }
 #main-p{
-    /* overflow: hidden; */
-    /* overflow: auto; */
     width: auto;
-    border: 2px solid rgb(255, 246, 246);
+    /* border: 2px solid rgb(255, 246, 246); */
+    opacity: 80%;
     background-color: black;
 }
 .one{
     margin-top: 10px;
     margin-bottom: 60px;
-    border: 1px groove rgb(39, 32, 48);
+    /* border: 1px groove rgb(39, 32, 48); */
     padding-left: 0;
     background-color: black;
+    opacity: 90%;
     color: white;
+    font-style: oblique;
+    font-weight: 500;
+    /* height: fit-content; */
    
 }
 .ones{
@@ -35,7 +42,15 @@ body{
     padding-left: 0;
     background-color: black;
     color: white;
-   
+    font-style: oblique;
+    font-weight: 500;
+    /* height: fit-content; */
+}
+#close-search{
+    width: 20px;
+    height: 20px;
+    display: block;
+    
 }
 .h2{
     text-align: center;
@@ -63,4 +78,11 @@ body{
     display: flex;
     justify-content: flex-end;
     margin-top: 12px;
+}
+.footer{
+    opacity: 80%;
+    background-image: url('footer.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
