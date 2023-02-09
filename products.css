@@ -14,12 +14,12 @@ body{
    /* background-size: cover; */
 }
 #brand-img{
-    height: 180px;
+    height: 150px;
 }
 #main-p{
     width: auto;
     /* border: 2px solid rgb(255, 246, 246); */
-    opacity: 80%;
+    opacity: 90%;
     background-color: black;
 }
 .one{
@@ -83,11 +83,15 @@ body{
     margin-top: 12px;
 }
 .footer{
-    opacity: 80%;
+    opacity: 90%;
     background-image: url('footer.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 800;
 }
 #logo{
     width: 80px;
