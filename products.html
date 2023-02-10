@@ -10,28 +10,32 @@
     <title>Our Products</title>
 </head>
 <body>
+  
+  <div id="top-brand"  class="my-3">
+    <h2 class="h2 text-danger text-uppercase">MULTI~tribe collections<span class="fa fa-bag-shopping text-danger h1"></span></h2>
     
+  </div>
+
     <div id="main-p" class="row container-fluid">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="nav">
+        <nav class="navbar navbar-expand-sm bg-white sticky-top" id="nav">
             <div class=" col-12 col-md-12">
-                 <a class="navbar-brand shadow-sm p-3 mb-5" href="products.html"><img src="logo.png" id="logo" alt="logo"></a>
+                 <!-- <a class="navbar-brand shadow-sm p-3 mb-5" href="products.html"><img src="logo.png" id="logo" alt="logo"></a> -->
               
                 <ul class="navbar-nav justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link shadow mx-2 rounded-2 btn btn-outline-primary" href="index.html">Home</a>
+                    <a class="nav-link shadow mx-2 rounded-2 btn btn-outline-danger text-dark" href="index.html">Home<span class="fa fa-home-lg mx-4"></span></a>
                   </li>
                  <li class="nav-item">
-                    <a class="nav-link shadow btn btn-outline-primary" href="products.html">Products</a>
+                    <a class="nav-link shadow btn btn-outline-danger text-dark" href="products.html">Products<span class="fa fa-shopping-basket mx-4"></span></a>
                   </li>
                 </ul>
-              <div id="search">
-                  <input type="text" id="find" placeholder="find product" class="rounded-bottom text-bg-light w-50 mx-4">
-                  <button class="btn btn-outline-primary" onclick="search()">  <span class="fa fa-search"></span></button>
+              <div id="search" class="my-5">
+                  <input type="text" id="find" placeholder="find product" class="rounded-bottom text-bg-light w-50 mx-4 shadow">
+                  <button class="btn btn-outline-danger" onclick="search()">  <span class="fa fa-search"></span></button>
               </div>
               </div>
           </nav>
           <img class="w-100" src="https://cdn.pixabay.com/photo/2021/10/11/17/54/technology-6701504__340.jpg" alt="brand" id="brand-img">
-          <h2 class="h2 text-white text-uppercase">Multi~tribe Products</h2>
          
           <div id="searchItems" class="col-12 col-6">
             <button class="btn btn-close btn-outline-danger" id="close-search" onclick="restoreIt()"></button>

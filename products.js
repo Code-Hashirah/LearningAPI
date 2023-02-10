@@ -88,7 +88,7 @@ function restoreIt(){
       let mainDiv=document.getElementById('items');
       mainDiv.style.display="flex";
 }
-
+restoreIt();
 // }
 // else{}
  function search(){
@@ -161,7 +161,7 @@ function restoreIt(){
          div0.append(pTag7)
          div0.append(img)
          searchDiv.appendChild(div0)
-         img.setAttribute('alt','Phones')
+         img.setAttribute('alt','Items')
          // console.log(prodId);
          console.log(prodTitle);
          // console.log(prodPrice);

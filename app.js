@@ -29,9 +29,9 @@ div1.setAttribute('class','one col-12 col-md-4 col-sm-12')
  pTag2.setAttribute('class','price')
  mainDiv.setAttribute('class','row text-bg-light mx-3 container-fluid')
  div1.appendChild(pTag);
- link.setAttribute('class', 'btn text-decoration-none text-white')
+ link.setAttribute('class', 'btn text-decoration-none text-danger fa fa-cart-shopping h1')
 img.src="https://cdn.pixabay.com/photo/2017/01/22/12/07/imac-1999636__340.png"
-link.innerHTML="Open Item"
+link.innerHTML=""
 link.href="#"
 link.append(img)
  div1.append(pTag1)

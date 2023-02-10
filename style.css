@@ -6,18 +6,25 @@
 body{
     width: auto;
    overflow-x: hidden;
-   background-color: black;
-   background-image: url('bg-home.jpg');
-   background-repeat: no-repeat;
+    background-color: white;;
+   
+    background-repeat:no-repeat;
+}
+#top-brand{
+    display: flex;
+    box-shadow: 10px 10px 20px red;
+    justify-content: center;
+    background-image: url('bg-home.jpg');
+    min-height: 300px;
 }
 #brand-img{
-    height: 180px;
+    height: 150px;
 }
 #main-p{
     width: auto;
-    /* width: 100%; */
+    background-image:('bg-home.jpg');
     border: 2px solid rgb(236, 226, 226);
-    /* background-color: black; */
+    background-color: white;
     opacity: 90%;
 }
 #items{
@@ -37,15 +44,15 @@ body{
     margin-bottom: 60px;
     border: 1px groove rgb(228, 221, 236);
     padding-left: 10px;
-    background-color: black;
-    color: rgb(219, 224, 228);
+     background-color: white;;
+    color: black
 }
 .h2{
     text-align: center;
 }
 #nav{
     /* z-index: 1; */
-    background-color: black;
+     background-color: white;;
     /* position: sticky; */
 }
 
@@ -62,8 +69,8 @@ body{
 }
 .footer{
     opacity: 90%;
-    background-image: url('footer.webp');
-    background-repeat: no-repeat;
+     background-image:url('footer.webp');
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;

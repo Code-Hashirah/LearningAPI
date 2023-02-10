@@ -7,11 +7,14 @@
 body{
     width: auto;
    overflow-x:hidden;
-   background-image: url('bg-home.jpg');
    background-blend-mode: darken;
-   /* background-repeat: no-repeat; */
-   /* background-position: center; */
-   /* background-size: cover; */
+}
+#top-brand{
+    display: flex;
+    box-shadow: 10px 10px 20px red;
+    justify-content: center;
+    background-image: url('bg-home.jpg');
+    min-height: 300px;
 }
 #brand-img{
     height: 150px;
@@ -20,40 +23,45 @@ body{
     width: auto;
     /* border: 2px solid rgb(255, 246, 246); */
     opacity: 90%;
-    background-color: black;
+    background-color: white;
+    
+}
+#nav{
+    background-image: radial-gradient(rgb(204, 219, 216), rgb(241, 255, 192), rgb(225, 224, 217));
+}
+.image{
+    height: 250px;
 }
 .one{
     margin-top: 10px;
     margin-bottom: 60px;
-    /* border: 1px groove rgb(39, 32, 48); */
-    padding-left: 0;
-    background-color: black;
-    opacity: 90%;
-    color: white;
+    background-color: white;
+    opacity: 70%;
+    color: black;
     font-style: oblique;
-    font-weight: 500;
-    /* height: fit-content; */
+    font-weight: 800;
+    box-shadow:6px 6px 12px white;
+    
    
 }
 .ones{
     margin-top: 10px;
     margin-bottom: 60px;
-    border: 1px groove rgb(39, 32, 48);
+    border: 1px groove white;
     padding-left: 0;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-style: oblique;
     font-weight: 500;
+    box-shadow: inset 6px 6px 12px white;
     /* height: fit-content; */
 }
-#close-search{
+/* #close-search{
     width: 20px;
     height: 20px;
    
    /* margin-block: 50%; */
-  
-    
-}
+/* } */
 .h2{
     text-align: center;
 }
@@ -66,10 +74,10 @@ body{
 }
 
 #items{
-    background-color: black;
+    background-color: white;
 }
 #searchItems{
-    background-color: black;
+    background-color: white;
 }
 /* .id, .title ,.price ,.description ,.brand ,.rating ,.discount ,.cartegory::first-line{
     color: rgb(225, 230, 231);
